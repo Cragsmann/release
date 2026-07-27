@@ -1,11 +1,6 @@
-approve:
-- repos:
-  - openshift-priv/mirror-gui
-  require_self_approval: false
 plugins:
-  openshift-priv/mirror-gui:
+  openshift-priv/autoscale-tests:
     plugins:
-    - approve
     - assign
     - blunderbuss
     - cat
@@ -32,6 +27,6 @@ plugins:
     - yuks
 triggers:
 - repos:
-  - openshift-priv/mirror-gui
+  - openshift-priv/autoscale-tests
   trusted_apps:
   - openshift-merge-bot
